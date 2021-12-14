@@ -1,0 +1,96 @@
+.header-fixed {
+    .navbar{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    height: 100px;
+    font-family: $navbar-fonts;
+    font-size: $navbar-fonts-size;
+    font-weight: 700;
+
+
+        .container {
+            display: flex;
+            align-items: center;
+            padding: 0px 15px;
+
+            .logo {
+                display: flex;
+                align-items: center;
+            }
+
+            .row {
+                .list-items {
+                    display: flex;
+                    align-items: center;
+                    //padding: 0px 200px 0px 80px;
+                    
+                    a {
+                        color: $font-color;
+                    }
+
+                    .listHome {
+                        padding: 0px 20px;
+                    }
+
+                    .listDiscover, .listPages {
+                        padding: 0px 35px 0px 20px;
+                    }
+
+                    .listContact {
+                        padding: 0px 0px 0px 20px;
+                    }
+
+                }
+
+                .col-10 {
+                    display: flex;
+                }
+
+                .col-6 {
+                    display: flex;
+                }
+
+                .header-btn {
+                    display: flex;
+
+                    .nav-buttons-list {
+                        display: flex;
+                        align-items: center;
+                        margin-left: 50%;
+
+                        .signIn, .signUp {
+                            padding: 0px 25px;
+                            font-size: 12px;
+                            font-family: $navbar-fonts;
+                            border: 1px solid #585CE9;
+                            border-radius: 5px;
+                            height: 32px;
+                            display: inline-block;
+                        }
+
+                        .signIn {
+                            color: #585CE9;
+                        }
+
+                        .signUp {
+                            color: #fff;
+                            background: #585CE9;
+                            margin: 0px 0px 0px 15px;
+
+                        }
+
+
+                    }
+                }
+
+              
+            }
+
+            
+        }
+    }
+}
