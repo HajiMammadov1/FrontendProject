@@ -1,7 +1,10 @@
+* {
+  font-family: "Nunito", sans-serif;
+}
+
 .header-fixed .navbar {
   -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -9,6 +12,7 @@
   height: 100px;
   font-family: "Nunito", sans-serif;
   font-size: 14px;
+  font-weight: 500;
 }
 
 .header-fixed .navbar .container {
@@ -47,7 +51,8 @@
   padding: 0px 20px;
 }
 
-.header-fixed .navbar .container .row .list-items .listDiscover, .header-fixed .navbar .container .row .list-items .listPages {
+.header-fixed .navbar .container .row .list-items .listDiscover,
+.header-fixed .navbar .container .row .list-items .listPages {
   padding: 0px 35px 0px 20px;
 }
 
@@ -67,39 +72,62 @@
   display: flex;
 }
 
-.header-fixed .navbar .container .row .header-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.header-fixed .navbar .container .row .header-btn .nav-buttons-list {
+.header-fixed .navbar .container .row .col-6 .header-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 50%;
 }
 
-.header-fixed .navbar .container .row .header-btn .nav-buttons-list .signIn, .header-fixed .navbar .container .row .header-btn .nav-buttons-list .signUp {
-  padding: 0px 25px;
+.header-fixed .navbar .container .row .col-6 .header-btn .signIn, .header-fixed .navbar .container .row .col-6 .header-btn .signUp {
+  padding: 6px 35px;
   font-size: 12px;
   font-family: "Nunito", sans-serif;
-  border: 1px solid #585CE9;
+  font-weight: 500;
+  border: 1px solid #585ce9;
   border-radius: 5px;
-  height: 32px;
-  display: inline-block;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
-.header-fixed .navbar .container .row .header-btn .nav-buttons-list .signIn {
-  color: #585CE9;
+.header-fixed .navbar .container .row .col-6 .header-btn .signIn {
+  color: #585ce9;
 }
 
-.header-fixed .navbar .container .row .header-btn .nav-buttons-list .signUp {
+.header-fixed .navbar .container .row .col-6 .header-btn .signIn:hover {
   color: #fff;
-  background: #585CE9;
+  background: #585ce9;
+}
+
+.header-fixed .navbar .container .row .col-6 .header-btn .signUp {
+  color: #fff;
+  background: #585ce9;
   margin: 0px 0px 0px 15px;
+}
+
+.header-fixed .navbar .container .row .col-6 .header-btn .signUp:hover {
+  color: #585ce9;
+  background: #fff;
+}
+
+.container .row .col-6 {
+  line-height: 1.5;
+  text-align: left;
+  font-weight: 400;
+  color: #6F8BA4;
+  font-family: "Nunito", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 /*# sourceMappingURL=main.css.map */
