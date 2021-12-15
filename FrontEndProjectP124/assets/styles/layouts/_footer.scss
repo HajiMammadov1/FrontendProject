@@ -1,0 +1,83 @@
+body {
+    footer {
+      position: relative;
+      top: 1164px;
+      background: #585ce9;
+      padding-top: 70px;
+      .container {
+        height: 320px;
+        .row {
+          .col-5 {
+            .footer-logo {
+              margin-bottom: 50px;
+            }
+            .footer-text {
+              color: white;
+              width: 444px;
+            }
+          }
+          .col-2 {
+            h5 {
+              color: white;
+              margin-bottom: 50px;
+            }
+            .footer-navs {
+              ul {
+                li {
+                  list-style: none;
+                  .fa-chevron-right {
+                    color: white;
+                    font-size: x-small;
+                  }
+                  a {
+                    &:hover {
+                      margin-left: 20px;
+                    }
+                    text-decoration: none;
+                    margin-left: 15px;
+                    line-height: 32px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: #e5e9f7;
+                    transition: all 0.08s linear;
+                  }
+                }
+              }
+            }
+          }
+          .col-3 {
+            h5 {
+              color: white;
+              margin-bottom: 50px;
+            }
+            .address {
+              line-height: 25px;
+              color: white;
+            }
+            .socials {
+              ul {
+                display: flex;
+                text-decoration: none;
+                list-style: none;
+                position: relative;
+                right: 30px;
+                li {
+                  margin-right: 15px;
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+        .footercopy {
+          text-align: center;
+          border-top: 1px solid #777bff;
+          margin-top: 20px;
+          padding-top: 20px;
+          font-size: 14px;
+          color: #e5e9f7;
+          letter-spacing: 0.88px;
+        }
+      }
+    }
+  }
