@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('.loader').fadeOut('slow')
+    $('.loader').fadeOut();
 })
 
 let myNav = document.querySelector("#Nav");
