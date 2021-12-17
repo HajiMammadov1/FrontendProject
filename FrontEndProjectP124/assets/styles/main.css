@@ -1,8 +1,9 @@
 body footer {
-  position: relative;
   top: 1164px;
   background: #585ce9;
   padding-top: 70px;
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 20px;
 }
 
 body footer .container {
@@ -21,6 +22,8 @@ body footer .container .row .col-5 .footer-text {
 body footer .container .row .col-2 h5 {
   color: white;
   margin-bottom: 50px;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 body footer .container .row .col-2 .footer-navs ul li {
@@ -50,6 +53,8 @@ body footer .container .row .col-2 .footer-navs ul li a:hover {
 body footer .container .row .col-3 h5 {
   color: white;
   margin-bottom: 50px;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 body footer .container .row .col-3 .address {
@@ -65,6 +70,7 @@ body footer .container .row .col-3 .socials ul {
   list-style: none;
   position: relative;
   right: 30px;
+  margin-left: 30px;
 }
 
 body footer .container .row .col-3 .socials ul li {
@@ -82,95 +88,131 @@ body footer .container .footercopy {
   letter-spacing: 0.88px;
 }
 
-.header-fixed .navbar {
+.header-fixed {
+  background: #fff;
+  height: 80px;
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 0px;
+  left: 0px;
+  right: 0px;
   z-index: 100;
-  height: 100px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  display: block;
+}
+
+.header-fixed nav {
+  display: block;
+}
+
+.header-fixed nav .logo {
+  margin-top: 26px;
+  float: left;
+}
+
+.header-fixed nav .head-btns {
+  float: right;
+  margin-top: -8px;
+}
+
+.header-fixed nav .head-btns li {
+  float: left;
+}
+
+.header-fixed nav .head-btns li .btn-head {
+  padding-left: 25px;
+  padding-right: 25px;
+  border: 1px solid #585ce9;
+  border-radius: 5px;
+  display: inline-block;
+  height: 32px;
+  margin-top: 5px;
+  line-height: 31px;
+  letter-spacing: 0.5px;
+  background: none;
+  color: #585ce9;
+  position: relative;
+  overflow: hidden;
+  margin-top: 32px;
+  font-weight: 700;
+  font-size: 12px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  min-width: 110px;
+  text-align: center;
   font-family: "Nunito", sans-serif;
+  margin-left: 15px;
+}
+
+.header-fixed nav .head-btns li .signin:hover {
+  background-color: #585ce9;
+  color: white;
+}
+
+.header-fixed nav .head-btns li .signup {
+  background: #585ce9;
+  color: #fff;
+}
+
+.header-fixed nav .head-btns li .signup:hover {
+  background-color: white;
+  color: #585ce9;
+  border: 1px solid #585ce9;
+}
+
+.header-fixed nav .nav {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  margin-top: 21px !important;
+  float: left !important;
+  margin-left: 80px;
+}
+
+.header-fixed nav .nav li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header-fixed nav .nav li a {
+  color: #3b566e;
+  display: block;
+  font-weight: 600;
   font-size: 14px;
-  font-weight: 500;
-}
-
-.header-fixed .navbar a {
-  text-decoration: none;
-}
-
-.header-fixed .navbar .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0px 15px;
-}
-
-.header-fixed .navbar .container .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header-fixed .navbar .container .row .list-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header-fixed .navbar .container .row .list-items .fa-chevron-down {
-  font-size: 8px;
-  margin-left: 8px;
   color: #6f8ba4;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  height: 40px;
+  line-height: 40px;
+  border: transparent;
+  letter-spacing: 1px;
+  font-family: "Nunito", sans-serif;
 }
 
-.header-fixed .navbar .container .row .list-items a {
-  color: #6F8BA4;
+.header-fixed nav .nav .menu {
+  position: relative;
+  padding-right: 35px;
 }
 
-.header-fixed .navbar .container .row .list-items .listHome {
-  padding: 0px 20px;
+.header-fixed nav .nav .menu:hover ul li {
+  display: block;
 }
 
-.header-fixed .navbar .container .row .list-items .listDiscover,
-.header-fixed .navbar .container .row .list-items .listPages {
-  padding: 0px 35px 0px 20px;
+.header-fixed nav .nav .menu::after {
+  font-family: FontAwesome;
+  content: "\f107";
+  font-size: 12px;
+  color: #6f8ba4;
+  position: absolute;
+  right: 18px;
+  top: 14px;
 }
 
-.header-fixed .navbar .container .row .list-items .listDiscover:hover,
-.header-fixed .navbar .container .row .list-items .listPages:hover {
+.header-fixed nav .nav .menu ul {
   position: absolute;
   width: 200px;
   -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border-radius: 5px;
-  overflow: hidden;
-  top: 40px;
-  opacity: 1;
-  -webkit-transform: translateY(-2em);
-          transform: translateY(-2em);
-  visibility: hidden;
-  z-index: -1;
-  -webkit-transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
-  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
-}
-
-.header-fixed .navbar .container .row .list-items .listDiscover .discover__ul,
-.header-fixed .navbar .container .row .list-items .listDiscover .pages__ul,
-.header-fixed .navbar .container .row .list-items .listPages .discover__ul,
-.header-fixed .navbar .container .row .list-items .listPages .pages__ul {
-  position: absolute;
-  width: 200px;
-  -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
-          box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
   border-radius: 5px;
   overflow: hidden;
   top: 40px;
@@ -183,71 +225,66 @@ body footer .container .footercopy {
   transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
 }
 
-.header-fixed .navbar .container .row .list-items .listDiscover a:hover .discover__ul {
-  visibility: visible;
-  opacity: 1;
-  z-index: 1;
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
-  -webkit-transition-delay: 0s, 0s, 0.3s;
-          transition-delay: 0s, 0s, 0.3s;
+.header-fixed nav .nav .menu ul li {
+  margin-left: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
-.header-fixed .navbar .container .row .list-items .listContact {
-  padding: 0px 0px 0px 20px;
+#faq {
+  height: 200px;
+  margin-top: 400px;
+  margin-bottom: 400px;
+  background: #585CE9;
+  opacity: 0.8;
 }
 
-.header-fixed .navbar .container .row .col-10 {
+#faq .col-12 {
+  margin-top: 70px;
+}
+
+#faq .breadcrumb {
+  border-radius: 0px;
+  background: none;
+  padding: 0px;
+  margin-top: 8px;
+  margin-bottom: 0px;
+  display: block;
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.header-fixed .navbar .container .row .col-6 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.header-fixed .navbar .container .row .col-6 .header-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header-fixed .navbar .container .row .col-6 .header-btn .signIn,
-.header-fixed .navbar .container .row .col-6 .header-btn .signUp {
-  padding: 6px 35px;
-  font-size: 12px;
+#faq .breadcrumb .active {
+  font-weight: 400;
+  font-size: 14px;
+  color: #e5e9f7;
+  line-height: 30px;
+  margin-left: 10px;
+  display: inline-block;
   font-family: "Nunito", sans-serif;
-  font-weight: 500;
-  border: 1px solid #585ce9;
-  border-radius: 5px;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
 }
 
-.header-fixed .navbar .container .row .col-6 .header-btn .signIn {
-  color: #585ce9;
+#faq .breadcrumb li a {
+  font-weight: 400;
+  font-size: 14px;
+  color: #e5e9f7;
+  line-height: 30px;
+  margin-left: 10px;
+  display: inline-block;
+  font-family: "Nunito", sans-serif;
 }
 
-.header-fixed .navbar .container .row .col-6 .header-btn .signIn:hover {
+#faq h1 {
+  font-weight: 400;
+  font-size: 36px;
+  height: 50px;
+  line-height: 46px;
+  letter-spacing: 1.4px;
   color: #fff;
-  background: #585ce9;
-}
-
-.header-fixed .navbar .container .row .col-6 .header-btn .signUp {
-  color: #fff;
-  background: #585ce9;
-  margin: 0px 0px 0px 15px;
-}
-
-.header-fixed .navbar .container .row .col-6 .header-btn .signUp:hover {
-  color: #585ce9;
-  background: #fff;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
 }
 
 .button-main {
@@ -409,16 +446,18 @@ body main .container .row .images {
   margin-top: 90px;
 }
 
-body main .container .row .images .oppener-text {
+body main .container .row .images .welcome-text {
   position: relative;
   left: 4%;
   margin-top: 200px;
+  width: 60%;
+  font-family: "Nunito";
   z-index: -5;
   position: relative;
   height: 543px;
 }
 
-body main .container .row .images .oppener-text h1 {
+body main .container .row .images .welcome-text h1 {
   font-weight: 400;
   font-size: 28px;
   color: #1e3056;
@@ -428,11 +467,11 @@ body main .container .row .images .oppener-text h1 {
   width: 67%;
 }
 
-body main .container .row .images .oppener-text h1 span {
+body main .container .row .images .welcome-text h1 span {
   color: #585ce9;
 }
 
-body main .container .row .images .oppener-text p {
+body main .container .row .images .welcome-text p {
   font-weight: 400;
   font-size: 16px;
   color: #697ba2;
@@ -443,7 +482,7 @@ body main .container .row .images .oppener-text p {
   width: 68%;
 }
 
-body main .container .row .images .oppener-text button {
+body main .container .row .images .welcome-text button {
   cursor: pointer;
   background-color: #585ce9;
   color: white;
@@ -455,12 +494,12 @@ body main .container .row .images .oppener-text button {
   border-radius: 5px;
 }
 
-body main .container .row .images .oppener-text button:hover {
+body main .container .row .images .welcome-text button:hover {
   cursor: pointer;
   background-color: #484ef1;
 }
 
-body main .container .row .images .oppener-image {
+body main .container .row .images .welcome-image {
   width: 49%;
   height: 332px;
   float: left;
@@ -469,12 +508,12 @@ body main .container .row .images .oppener-image {
   left: 0px;
 }
 
-body main .container .row .images .oppener-image:hover {
+body main .container .row .images .welcome-image:hover {
   -webkit-transform: scale(1.5rem);
           transform: scale(1.5rem);
 }
 
-body main .container .row .images .oppener-image .image1 {
+body main .container .row .images .welcome-image .image1 {
   position: relative;
   left: 104%;
   padding: 0;
@@ -483,13 +522,14 @@ body main .container .row .images .oppener-image .image1 {
   height: 100%;
 }
 
-body main .container .row .images .oppener-image .image1 .firstimage {
+body main .container .row .images .welcome-image .image1 .firstimage {
   width: 280px;
   height: 318px;
   border-radius: 8px;
+  margin-top: 80px;
 }
 
-body main .container .row .images .oppener-image .image2 {
+body main .container .row .images .welcome-image .image2 {
   position: relative;
   left: 149%;
   padding: 0;
@@ -499,13 +539,15 @@ body main .container .row .images .oppener-image .image2 {
   bottom: 100%;
 }
 
-body main .container .row .images .oppener-image .image2 .secondimage {
+body main .container .row .images .welcome-image .image2 .secondimage {
   width: 272px;
   height: 239px;
   border-radius: 8px;
+  margin-top: 80px;
+  margin-left: 50px;
 }
 
-body main .container .row .images .oppener-image .image3 {
+body main .container .row .images .welcome-image .image3 {
   position: relative;
   left: 104%;
   padding: 0;
@@ -515,21 +557,23 @@ body main .container .row .images .oppener-image .image3 {
   bottom: 100%;
 }
 
-body main .container .row .images .oppener-image .image3 .fa-play-circle {
+body main .container .row .images .welcome-image .image3 .fa-play-circle {
   position: absolute;
   color: #f7fafdda;
   font-size: 4.5rem;
   left: 106px;
   top: 26%;
+  margin-top: 80px;
 }
 
-body main .container .row .images .oppener-image .image3 .thirdimage {
+body main .container .row .images .welcome-image .image3 .thirdimage {
   width: 280px;
   height: 240px;
   border-radius: 8px;
+  margin-top: 80px;
 }
 
-body main .container .row .images .oppener-image .image4 {
+body main .container .row .images .welcome-image .image4 {
   position: absolute;
   left: 149%;
   padding: 0;
@@ -539,21 +583,23 @@ body main .container .row .images .oppener-image .image4 {
   top: 91%;
 }
 
-body main .container .row .images .oppener-image .image4 .firstimage {
+body main .container .row .images .welcome-image .image4 .firstimage {
   width: 272px;
   height: 318px;
   border-radius: 10px;
+  margin-top: 110px;
 }
 
-body main .container .row .images .oppener-image .image4 .image-on-text {
+body main .container .row .images .welcome-image .image4 .image-on-text {
   background-color: #585de9be;
   position: absolute;
   width: 272px;
   height: 318px;
   border-radius: 8px;
+  margin-top: 110px;
 }
 
-body main .container .row .images .oppener-image .image4 .image-on-text strong {
+body main .container .row .images .welcome-image .image4 .image-on-text strong {
   position: relative;
   top: 38%;
   color: #fff;
@@ -562,7 +608,7 @@ body main .container .row .images .oppener-image .image4 .image-on-text strong {
   letter-spacing: 0.88px;
 }
 
-body main .container .row .images .oppener-image .image4 .image-on-text p {
+body main .container .row .images .welcome-image .image4 .image-on-text p {
   position: relative;
   top: 42%;
   color: #fff;
@@ -740,6 +786,11 @@ body main #first .container .row .images .oppener-image .image4 .firstimage {
   border-radius: 10px;
   -webkit-transform: translate(86px, -78px);
           transform: translate(86px, -78px);
+}
+
+body main #first .container .row .images .oppener-image .image4 .fourthImage {
+  margin-left: 50px;
+  margin-top: 110px;
 }
 
 #second {
@@ -1530,9 +1581,6 @@ body main #first .container .row .images .oppener-image .image4 .firstimage {
   outline: none !important;
   cursor: pointer;
   position: relative;
-}
-
-#bloglatest .row-2 .blog-text .btn-blog a {
   font-family: "Nunito", sans-serif;
 }
 

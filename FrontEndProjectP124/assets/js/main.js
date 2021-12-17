@@ -1,5 +1,15 @@
 $(document).ready(function() {
     $('.loader').fadeOut();
+
+
+    // $('.faq-header').each(function (index, item) {
+    //     $('.faq-header').eq(index).click(() => {
+    //         $('.faq-content').not(':eq(' + index + ')').removeClass('show');
+    //         $('.faq-content').eq(index).toggleClass('show')
+    //         $('.faq-header').eq(index).toggleClass('collapsed')
+
+    //     })
+    // });
 })
 
 let myNav = document.querySelector("#Nav");
