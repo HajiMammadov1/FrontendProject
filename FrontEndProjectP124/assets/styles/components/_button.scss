@@ -1,0 +1,15 @@
+.button-main {
+    &:hover {
+      cursor: pointer;
+      background-color: #484ef1;
+    }
+    cursor: pointer;
+    background-color: #585ce9;
+    color: white;
+    width: 170px;
+    margin-bottom: 0px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
