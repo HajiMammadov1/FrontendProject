@@ -231,63 +231,216 @@ body footer .container .footercopy {
   padding-right: 0px;
 }
 
-#faq {
-  height: 200px;
-  margin-top: 400px;
-  margin-bottom: 400px;
-  background: #585CE9;
-  opacity: 0.8;
+#faqs {
+  background-color: #FFF;
+  margin-top: 200px;
+  font-family: "Nunito", sans-serif;
 }
 
-#faq .col-12 {
-  margin-top: 70px;
-}
-
-#faq .breadcrumb {
-  border-radius: 0px;
-  background: none;
-  padding: 0px;
-  margin-top: 8px;
-  margin-bottom: 0px;
-  display: block;
-  text-align: center;
+#faqs .container {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#faq .breadcrumb .active {
+#faqs .container .help .help-item h1 {
   font-weight: 400;
-  font-size: 14px;
-  color: #e5e9f7;
-  line-height: 30px;
-  margin-left: 10px;
-  display: inline-block;
-  font-family: "Nunito", sans-serif;
+  font-size: 1.875rem;
+  color: #585CE9;
+  letter-spacing: 1.88px;
+  margin-bottom: 20px;
 }
 
-#faq .breadcrumb li a {
+#faqs .container .help .help-item p {
   font-weight: 400;
-  font-size: 14px;
-  color: #e5e9f7;
-  line-height: 30px;
-  margin-left: 10px;
-  display: inline-block;
-  font-family: "Nunito", sans-serif;
+  color: #6F8BA4;
+  line-height: 1.75rem;
+  letter-spacing: 0.88px;
+  margin-bottom: 28px;
 }
 
-#faq h1 {
+#faqs .container .help .help-item button {
+  margin-bottom: 40px;
+}
+
+#faqs .container .question .faq {
+  background-color: #FFF;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+}
+
+#faqs .container .question .faq .faq-item .faq-header {
+  border-bottom: 1px solid #F7FAFD;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#faqs .container .question .faq .faq-item .faq-header h5 {
+  width: 100%;
+  text-align: left;
+  padding: 20px 30px;
   font-weight: 400;
-  font-size: 36px;
-  height: 50px;
-  line-height: 46px;
-  letter-spacing: 1.4px;
-  color: #fff;
+  font-size: 0.9375rem;
+  letter-spacing: 1px;
+  color: #3B566E;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin: 0 !important;
+}
+
+#faqs .container .question .faq .faq-item .faq-header:hover {
+  background-color: #F7FAFD;
+  padding-left: 10px;
+}
+
+#faqs .container .question .faq .faq-item .faq-content {
+  max-height: 0;
+  -webkit-transition: max-height 0.3s ease;
+  transition: max-height 0.3s ease;
+  overflow: hidden;
+}
+
+#faqs .container .question .faq .faq-item .faq-content .content-wrap {
+  padding: 30px;
+  padding-left: 35px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #F7FAFD;
+}
+
+#faqs .container .question .faq .faq-item .faq-content .content-wrap p {
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #6F8BA4;
+  line-height: 1.75rem;
+  letter-spacing: 0.88px;
+}
+
+#faqs .container .question .faq .faq-item .faq-content.show {
+  -webkit-transition: max-height 0.3s ease;
+  transition: max-height 0.3s ease;
+  max-height: 220px;
+}
+
+#parallax-text {
+  margin-bottom: 60px;
+  margin-top: 10px;
+}
+
+#ourmap {
+  padding-top: 100px;
+  padding-bottom: 70px;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.88px;
+  line-height: 28px;
+  color: #6F8BA4;
+}
+
+#feature {
+  font-family: "Nunito", sans-serif;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+#feature .col-6 {
+  padding: 10px;
+}
+
+#feature .col-6:hover .icon::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#feature .services {
+  padding: 30px;
+  background: #fff;
+  border-radius: 3px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+#feature .services .text {
+  float: left;
+  width: calc(100% - 166px);
+  padding-left: 30px;
+}
+
+#feature .services .text .service-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #3B566E;
+  margin-bottom: 15px;
+  letter-spacing: 0.80px;
+}
+
+#feature .services .text p {
+  margin-bottom: 0px !important;
+  font-weight: 400;
+  font-size: 14px;
+  color: #6F8BA4;
+  line-height: 26px !important;
+  letter-spacing: .88px !important;
+}
+
+#feature .services .icon {
+  float: left;
+  width: 166px;
+  position: relative;
   text-align: center;
-  font-family: "Nunito", sans-serif;
+  min-height: 166px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#feature .services .icon::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 133px;
+  height: 133px;
+  background: #F7FAFD;
+  border-radius: 5px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+#feature .services .icon img {
+  position: relative;
+  z-index: 2;
+  text-align: center;
 }
 
 .button-main {
+  font-family: "Nunito", sans-serif;
   cursor: pointer;
   background-color: #585ce9;
   color: white;
@@ -905,6 +1058,7 @@ body main #first .container .row .images .oppener-image .image4 .fourthImage {
 #third {
   height: 500px;
   background-color: #f7fafd;
+  font-family: "Nunito", sans-serif;
 }
 
 #third .container .row .left-col {
