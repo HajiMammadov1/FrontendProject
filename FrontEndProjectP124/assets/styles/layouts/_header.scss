@@ -489,16 +489,16 @@
 
         .signin {
           &:hover {
-            background-color: #585ce9;
+            background-image: linear-gradient(135deg, #585ce9 0%, #5c83e3 100%);
             color: white;
           }
         }
 
         .signup {
-          background: #585ce9;
+          background: linear-gradient(135deg, #585ce9 0%, #5c83e3 100%);
           color: #fff;
           &:hover {
-            background-color: white;
+            background: white;
             color: #585ce9;
             border: 1px solid #585ce9;
           }
