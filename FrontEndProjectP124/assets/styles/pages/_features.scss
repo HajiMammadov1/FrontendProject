@@ -1,0 +1,135 @@
+#feature {
+    font-family: $common-fonts;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    .col-6 {
+        padding: 10px;
+
+        &:hover .icon::before {
+            transform: rotate(45deg);
+        }
+    }
+  .services {
+    padding: 30px;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    transition: all 0.3s ease 0s;
+
+    .text {
+      float: left;
+      width: calc(100% - 166px);
+      padding-left: 30px;
+
+      .service-title {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: #3B566E;
+        margin-bottom: 15px;
+        letter-spacing: 0.80px;
+      }
+
+      p {
+        margin-bottom: 0px !important;
+        font-weight: 400;
+        font-size: 14px;
+        color: #6F8BA4;
+        line-height: 26px !important;
+        letter-spacing: .88px !important;
+      }
+    }
+
+    .icon {
+      float: left;
+      width: 166px;
+      position: relative;
+      text-align: center;
+      min-height: 166px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        width: 133px;
+        height: 133px;
+        background: #F7FAFD;
+        border-radius: 5px;
+        transform: rotate(0deg);
+        transition: all 0.3s ease 0s;
+      }
+
+      
+
+      img {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+#parallax-text {
+  margin-bottom: 0px;
+  margin-top: 10px;
+  opacity: 0.8;
+
+  .info-parallax-contact {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-weight: 400;
+
+    margin-top: 100px;
+    p {
+      color: #ffffff;
+      font-size: 36px;
+      font-family: $common-fonts;
+      margin-bottom: 10px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        margin: 0px 0px 50px 784px;
+        width: 19px;
+        height: 2px;
+        background: #fff;
+        border-radius: 100px;
+      }
+    }
+
+    .aafter::after {
+      font-family: FontAwesome;
+      content: "\f105";
+      margin-left: 10px;
+      color: #e5e9f7;
+    }
+
+    .aafter {
+      font-size: 14px;
+      font-family: $common-fonts;
+      color: #ffffff;
+    }
+    a {
+      color: #e5e9f7;
+      font-size: 14px;
+      font-family: $common-fonts;
+      margin: 0px 0px 0px 10px;
+    }
+  }
+}

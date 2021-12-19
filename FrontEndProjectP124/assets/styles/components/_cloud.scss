@@ -1,0 +1,87 @@
+#third {
+    height: 500px;
+    background-color: #f7fafd;
+    font-family: $common-fonts;
+    .container {
+      .row {
+        .left-col {
+          position: relative;
+  
+          top: 30px;
+          .left-heading {
+            h1 {
+              font-weight: 400;
+              font-size: 28px;
+              color: #3b566e;
+              letter-spacing: 1.75px;
+              height: 45px;
+              margin-bottom: 10px;
+            }
+          }
+          .left-side {
+            .row {
+              .col-6 {
+                margin-top: 10px;
+        
+                a {
+                  &:hover::before {
+                    background: #484ef1;
+                    width: 180px;
+                  }
+                  &:hover {
+                    left: 5px;
+                  }
+                  
+                  &::before {
+                    content: "";
+  
+                    background: #d1d3d4;
+                    width: 160px;
+                    z-index: 3;
+                    height: 90px;
+                    left: -70px;
+                    top: 0px;
+                    position: absolute;
+                    transform: rotate(60deg);
+                    transition: all 0.03s linear;
+                  }
+                  overflow: hidden;
+                  width: 85%;
+                  text-align: center;
+                  color: #1e3056;
+                  display: inline-block;
+                  height: 40px;
+                  line-height: 40px;
+                  box-shadow: 1px 1px 1px #6f8ba46e;
+                  border-radius: 5px;
+                  background: #fff;
+                  margin-bottom: 20px;
+                  font-size: 14px;
+                  letter-spacing: 0.88px;
+                  cursor: pointer;
+                  position: relative;
+                  text-decoration: none;
+                }
+                .fa-chevron-right {
+                  position: relative;
+                  font-size: x-small;
+                  bottom: 35px;
+                  left: 37px;
+                  z-index: 6;
+                  color: #3b566e;
+                }
+                
+              }
+            }
+          }
+        }
+        .col-6 {
+          .right-side {
+            position: relative;
+            left: 18%;
+            top: 25%;
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,144 @@
+.second {
+  //    height: 200px;
+  .cardrow {
+    margin-top: -130px;
+  }
+}
+
+.cloud-head {
+  padding-top: 80px;
+  .col-12 {
+    .head-center {
+      text-align: center;
+
+      .section-title {
+        font-weight: 400;
+        font-size: 28px;
+        color: #3b566e;
+        letter-spacing: 1.75px;
+        line-height: 38px;
+        margin-bottom: 20px;
+        font-family: $common-fonts;
+      }
+    }
+  }
+
+  .col-12 {
+    .text-center {
+      text-align: center;
+      font-weight: 400;
+      font-size: 16px;
+      color: #6f8ba4;
+      line-height: 28px;
+      letter-spacing: 1px;
+      margin-bottom: 50px;
+      font-family: $common-fonts;
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+}
+
+// #ourmission {
+//   .about {
+//     position: relative;
+//     float: left;
+//     width: 100%;
+//     margin-bottom: 100px;
+//   }
+//   .about-image {
+//     position: relative;
+//     width: 70%;
+//     float: left;
+//     height: 500px;
+//     border-radius: 5px;
+//     overflow: hidden;
+//     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+//     z-index: 1;
+
+//     .image-wrap {
+//       position: relative;
+//       padding: 0;
+//       margin: 0;
+//       width: 100%;
+//       height: 100%;
+//       overflow: hidden;
+
+//       img {
+//         left: -999999px;
+//         right: -999999px;
+//         top: -999999px;
+//         bottom: -999999px;
+//         z-index: 0;
+//         width: 778px;
+//         height: 518px;
+//         max-width: auto !important;
+//         min-width: auto !important;
+//         position: absolute;
+//         margin: auto;
+//         transition: all 0.4s;
+//         transform: scale(1);
+//       }
+//     }
+//   }
+// }
+
+.mission-main {
+  background-color: #f7fafd;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  font-family: $common-fonts;
+  background: #f7fafd;
+  .container {
+    padding: 0 15px !important;
+    position: relative;
+    justify-content: space-between;
+    .image-mission {
+      height: 500px;
+      overflow: hidden;
+      width: 70%;
+      position: relative;
+      z-index: 1;
+      border-radius: $main-radius;
+      .image {
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: $transition-later;
+        }
+      }
+      &:hover img {
+        transform: scale(1.1);
+      }
+    }
+    .text-mission {
+      width: 40%;
+      position: absolute;
+      z-index: 2;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: $main-radius;
+      background-color: $color-white;
+      box-shadow: $shadow-light;
+      padding: 30px;
+      padding-bottom: 10px;
+      h2 {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 2.375rem;
+        letter-spacing: 1.75px;
+        color: #3b566e;
+        margin-bottom: 20px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.625rem;
+        margin-bottom: 20px;
+        color: #6f8ba4;
+      }
+    }
+  }
+}
