@@ -192,6 +192,10 @@ body footer .container .footercopy {
   color: #585ce9;
 }
 
+.header-fixed nav .nav li a:hover :before {
+  width: 5px;
+}
+
 .header-fixed nav .nav .menu {
   position: relative;
   padding-right: 35px;
@@ -251,6 +255,7 @@ body footer .container .footercopy {
   z-index: -1;
   -webkit-transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
   transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+  background: #fff;
 }
 
 .header-fixed nav .nav .menu ul li {
@@ -1723,6 +1728,7 @@ body main #first .container .row .images .oppener-image .image4 .fourthImage {
 
 #second {
   height: 500px;
+  font-family: "Nunito", sans-serif;
 }
 
 #second .container .row {
@@ -1744,6 +1750,7 @@ body main #first .container .row .images .oppener-image .image4 .fourthImage {
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -1765,7 +1772,7 @@ body main #first .container .row .images .oppener-image .image4 .fourthImage {
 
 #second .container .cardrow .card .card-body {
   padding: 20px;
-  height: 245px;
+  height: 266px;
 }
 
 #second .container .cardrow .card .card-body .card-icon {
@@ -1828,6 +1835,8 @@ body main #first .container .row .images .oppener-image .image4 .fourthImage {
   font-weight: 400;
   font-size: 14px;
   color: #6f8ba4;
+  letter-spacing: 0.88px;
+  line-height: 26px;
 }
 
 #fourth {
@@ -1866,8 +1875,8 @@ body main #first .container .row .images .oppener-image .image4 .fourthImage {
 
 #fourth .container .row .right-col .right-side .row .col-6 {
   margin-top: 20px;
-  -webkit-transition: all .1s linear;
-  transition: all .1s linear;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 
 #fourth .container .row .right-col .right-side .row .col-6 .active::before {
@@ -1904,7 +1913,7 @@ body main #first .container .row .images .oppener-image .image4 .fourthImage {
 }
 
 #fourth .container .row .right-col .right-side .row .col-6 a:hover::before {
-  background: #585CE9;
+  background: #585ce9;
   width: 170px;
 }
 
@@ -1914,7 +1923,7 @@ body main #first .container .row .images .oppener-image .image4 .fourthImage {
 
 #fourth .container .row .right-col .right-side .row .col-6 a::before {
   content: "";
-  background: #F7FAFD;
+  background: #f7fafd;
   width: 160px;
   z-index: 3;
   height: 90px;
@@ -2522,6 +2531,7 @@ body main #first .container .row .images .oppener-image .image4 .fourthImage {
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   position: relative;
+  font-family: "Nunito", sans-serif;
 }
 
 .parallax-counter .parallax-content .count-item strong::before {
@@ -2529,7 +2539,7 @@ body main #first .container .row .images .oppener-image .image4 .fourthImage {
   position: absolute;
   left: 0px;
   right: 0px;
-  top: 50px;
+  top: 60px;
   margin: auto;
   width: 115px;
   height: 1px;
@@ -2543,5 +2553,6 @@ body main #first .container .row .images .oppener-image .image4 .fourthImage {
   font-weight: 400;
   font-size: 20px;
   letter-spacing: 0.86px;
+  font-family: "Nunito", sans-serif;
 }
 /*# sourceMappingURL=main.css.map */
