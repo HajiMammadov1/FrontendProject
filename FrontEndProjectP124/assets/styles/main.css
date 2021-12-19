@@ -740,6 +740,12 @@ body footer .container .footercopy {
   font-family: "Nunito", sans-serif;
 }
 
+#ourmap .info .row {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
 #ourmap .item {
   color: #ffffff;
 }
@@ -750,11 +756,14 @@ body footer .container .footercopy {
   width: 20px;
   margin-right: 10px;
   margin-top: 5px;
+  -webkit-transform: translate(-24px, 21px);
+          transform: translate(-24px, 21px);
 }
 
 #ourmap .item span {
   float: left;
   font-size: 14px;
+  margin-bottom: -22px;
 }
 
 #ourmap a {
@@ -763,7 +772,7 @@ body footer .container .footercopy {
 
 #ourmap .social {
   overflow: hidden;
-  margin-top: 30px;
+  margin-top: 50px;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -1188,7 +1197,6 @@ body footer .container .footercopy {
   margin: 0px 0px 0px 10px;
 }
 
-/* loader starts */
 .loader {
   overflow: hidden;
   background-image: linear-gradient(135deg, #585CE9 0%, #585CE9 100%);
@@ -1231,8 +1239,6 @@ body footer .container .footercopy {
           animation: shadow .5s linear infinite;
 }
 
-/* loader ends */
-/* loader animations start */
 @-webkit-keyframes loader {
   0% {
     left: -100px;
@@ -1241,6 +1247,7 @@ body footer .container .footercopy {
     left: 110%;
   }
 }
+
 @keyframes loader {
   0% {
     left: -100px;
@@ -1310,7 +1317,6 @@ body footer .container .footercopy {
   }
 }
 
-/* loader animations end */
 html {
   scroll-behavior: smooth;
 }
@@ -1410,7 +1416,7 @@ body main .container .row .images .welcome-image .image1 .firstimage {
   width: 280px;
   height: 318px;
   border-radius: 8px;
-  margin-top: 80px;
+  margin-top: 90px;
 }
 
 body main .container .row .images .welcome-image .image2 {
@@ -1427,7 +1433,7 @@ body main .container .row .images .welcome-image .image2 .secondimage {
   width: 272px;
   height: 239px;
   border-radius: 8px;
-  margin-top: 80px;
+  margin-top: 90px;
   margin-left: 50px;
 }
 

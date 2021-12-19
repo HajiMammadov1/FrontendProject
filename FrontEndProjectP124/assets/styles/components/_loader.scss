@@ -1,4 +1,5 @@
-/* loader starts */
+// loader itself
+
 .loader {
     overflow: hidden;
     background-image: linear-gradient(135deg, $main-color 0%, $main-color 100%);
@@ -35,9 +36,10 @@
           }
       }
   }
-/* loader ends */
 
-  /* loader animations start */
+
+  // loader animations starts
+
   @keyframes loader {
     0% {
       left: -100px;
@@ -71,4 +73,5 @@
       transform: scale(1.2, 1);
     }
   }
-  /* loader animations end */
+  
+ //loader animation ends

@@ -17,7 +17,7 @@ $(document).ready(function () {
     });
 
 
-
+     //Navbar scroll styles
     let myNav = document.querySelector("#Nav");
     window.addEventListener("scroll", function (e) {
 
