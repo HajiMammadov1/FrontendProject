@@ -330,6 +330,10 @@
     display: flex;
     justify-content: space-evenly;
     overflow: hidden;
+    margin-bottom: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    
     
     img {
       text-align: center;
@@ -341,7 +345,7 @@
 
     .imgs {
       overflow: hidden;
-      border-radius: 4px;
+      border-radius: 5px;
     }
 
     .imgs:hover img {

@@ -893,6 +893,9 @@ body footer .container .footercopy {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   overflow: hidden;
+  margin-bottom: 30px;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 #blogs .inner-images img {
@@ -905,7 +908,7 @@ body footer .container .footercopy {
 
 #blogs .inner-images .imgs {
   overflow: hidden;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 #blogs .inner-images .imgs:hover img {
