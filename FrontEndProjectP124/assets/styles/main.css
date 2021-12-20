@@ -885,6 +885,34 @@ body footer .container .footercopy {
   color: #0056b3;
 }
 
+#blogs .inner-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  overflow: hidden;
+}
+
+#blogs .inner-images img {
+  text-align: center;
+  height: 197px;
+  width: 204px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+#blogs .inner-images .imgs {
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+#blogs .inner-images .imgs:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 #ourmap {
   padding-top: 80px;
   padding-bottom: 70px;

@@ -324,3 +324,28 @@
    
   }
 }
+
+#blogs {
+  .inner-images {
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    
+    img {
+      text-align: center;
+      height: 197px;
+      width: 204px;
+      // margin-left: 10px;
+      transition: all 0.4s;
+    }
+
+    .imgs {
+      overflow: hidden;
+      border-radius: 4px;
+    }
+
+    .imgs:hover img {
+      transform: scale(1.2);
+    }
+  }
+}
